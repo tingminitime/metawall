@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .logo-font {
+    @apply font-['Paytone_One'] text-2xl
+  }
+
+  .bg-checkerboard {
+    @apply bg-[length:56px_56px];
+    background-image:
+      linear-gradient(#dad7d3 1px, transparent 1px),
+      linear-gradient(to right, #dad7d3 1px, #efece7 1px);
+  }
+}
+
+@layer base {
+  html {
+    @apply overflow-x-hidden
+  }
+}
